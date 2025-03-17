@@ -1,0 +1,36 @@
+Stopwatch{
+    layout:horizontal;
+    margin: 1;
+    padding: 1;
+    background: $boost;
+    height:5;
+}
+
+TimeDisplay{
+    height: 3;
+    content-align:center middle;
+    text-opacity:60%;
+}
+
+/* write css of id's with prefix of # */
+#start{
+    dock:left;
+}
+
+#stop{
+    dock:left;
+    display: none;
+}
+
+#reset{
+    dock:right;
+}
+
+/* css styles will be written with prefix of (.) */
+.started #start{
+    display: none;
+}
+
+.started #stop{
+    display:block;
+}
